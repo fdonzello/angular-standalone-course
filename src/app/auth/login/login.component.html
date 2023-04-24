@@ -1,0 +1,11 @@
+<div class="text-center py-8">
+  <h1 class="text-6xl">Login now</h1>
+
+  <form class="flex flex-col items-center mt-8" [formGroup]="form" (submit)="submit()">
+    <input type="email" formControlName="email" placeholder="E-mail...">
+    <input type="password" formControlName="password" placeholder="Password...">
+
+
+    <button type="submit" class="mt-6" [disabled]="form.invalid">Login</button>
+  </form>
+</div>
