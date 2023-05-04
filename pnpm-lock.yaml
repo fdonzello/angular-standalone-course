@@ -25,6 +25,15 @@ dependencies:
   '@angular/router':
     specifier: ^16.0.0-next.0
     version: 16.0.0-next.7(@angular/common@16.0.0-next.7)(@angular/core@16.0.0-next.7)(@angular/platform-browser@16.0.0-next.7)(rxjs@7.8.0)
+  '@ngrx/effects':
+    specifier: 15.4.0
+    version: 15.4.0(@angular/core@16.0.0-next.7)(@ngrx/store@15.4.0)(rxjs@7.8.0)
+  '@ngrx/store':
+    specifier: ^15.4.0
+    version: 15.4.0(@angular/core@16.0.0-next.7)(rxjs@7.8.0)
+  '@ngrx/store-devtools':
+    specifier: ^15.4.0
+    version: 15.4.0(@ngrx/store@15.4.0)(rxjs@7.8.0)
   rxjs:
     specifier: ~7.8.0
     version: 7.8.0
@@ -1927,6 +1936,41 @@ packages:
   /@leichtgewicht/ip-codec@2.0.4:
     resolution: {integrity: sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==}
     dev: true
+
+  /@ngrx/effects@15.4.0(@angular/core@16.0.0-next.7)(@ngrx/store@15.4.0)(rxjs@7.8.0):
+    resolution: {integrity: sha512-/8gHhOM9aeGaw8OG2LLwi4I4p84xzG0EU9TqWrvQcW74wn8sFZONjLvUte5YOzJ5502PPFFrfXSOc+lHnVAJUA==}
+    peerDependencies:
+      '@angular/core': ^15.0.0
+      '@ngrx/store': 15.4.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@angular/core': 16.0.0-next.7(rxjs@7.8.0)(zone.js@0.13.0)
+      '@ngrx/store': 15.4.0(@angular/core@16.0.0-next.7)(rxjs@7.8.0)
+      rxjs: 7.8.0
+      tslib: 2.5.0
+    dev: false
+
+  /@ngrx/store-devtools@15.4.0(@ngrx/store@15.4.0)(rxjs@7.8.0):
+    resolution: {integrity: sha512-AqWRprSyS3u/vZlpsBOPMW1/0TZS2LE13/KpZedEY+RMCW+mi53esqgrdNGOB3Wr4vrI82Ar9fgaIm4TQO6LPg==}
+    peerDependencies:
+      '@ngrx/store': 15.4.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@ngrx/store': 15.4.0(@angular/core@16.0.0-next.7)(rxjs@7.8.0)
+      rxjs: 7.8.0
+      tslib: 2.5.0
+    dev: false
+
+  /@ngrx/store@15.4.0(@angular/core@16.0.0-next.7)(rxjs@7.8.0):
+    resolution: {integrity: sha512-OvCuNBHL8mAUnRTS6QSFm+IunspsYNu2cCwDovBNn7EGhxRuGihBeNoX47jCqWPHBFtokj4BlatDfpJ/yCh4xQ==}
+    peerDependencies:
+      '@angular/core': ^15.0.0
+      rxjs: ^6.5.3 || ^7.5.0
+    dependencies:
+      '@angular/core': 16.0.0-next.7(rxjs@7.8.0)(zone.js@0.13.0)
+      rxjs: 7.8.0
+      tslib: 2.5.0
+    dev: false
 
   /@ngtools/webpack@16.0.0-next.7(@angular/compiler-cli@16.0.0-next.7)(typescript@5.0.4)(webpack@5.77.0):
     resolution: {integrity: sha512-B+ytc1MhQQBuSG4epkFvSpxsAzLE7RHlVNOUroJkw5S6sZ1zogL4067SZJNRUbvFudyVw9p8a76syvR+ZXDSjg==}
