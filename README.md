@@ -1,14 +1,14 @@
 # TrainOnline
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0-next.7.
+This project is part of the Angular Standalone Component FREE Course published on my [blog](https://www.fradev.io/courses/angular/angular-standalone-components-course).
 
-## Development server
+## Getting started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `make setup` to install pnpm and then all dependencies.
 
-## Code scaffolding
+## Run the Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `make run`.
 
 ## Build
 
