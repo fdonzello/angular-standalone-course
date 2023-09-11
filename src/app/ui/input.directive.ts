@@ -7,8 +7,4 @@ import { Directive } from '@angular/core';
     'class': 'mt-2 mb-2'
   }
 })
-export class InputDirective {
-
-  constructor() { }
-
-}
+export class InputDirective { }
