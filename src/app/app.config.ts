@@ -1,7 +1,5 @@
 import { ApplicationConfig } from '@angular/core';
 import { Routes, provideRouter } from '@angular/router';
-import { provideStore } from '@ngrx/store';
-import { provideStoreDevtools } from '@ngrx/store-devtools';
 
 const GLOBAL_ROUTES: Routes = [{
   path: 'auth',
@@ -11,7 +9,5 @@ const GLOBAL_ROUTES: Routes = [{
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(GLOBAL_ROUTES),
-    provideStore(),
-    provideStoreDevtools()
   ],
 };

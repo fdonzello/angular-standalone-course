@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { ButtonDirective } from './ui/button.directive';
 
 @Component({
@@ -10,6 +10,7 @@ import { ButtonDirective } from './ui/button.directive';
     CommonModule,
     RouterOutlet,
     ButtonDirective,
+    RouterLink
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

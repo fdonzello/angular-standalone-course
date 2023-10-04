@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { emailField, passwordField } from 'src/app/forms/fields';
 import { InputDirective } from 'src/app/ui/input.directive';
+import { FormDirective } from 'src/app/ui/form.directive';
+import { ButtonDirective } from 'src/app/ui/button.directive';
 
 @Component({
   selector: 'fradev-login',
@@ -11,7 +13,9 @@ import { InputDirective } from 'src/app/ui/input.directive';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
+    ButtonDirective,
     InputDirective,
+    FormDirective
   ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
@@ -22,10 +26,5 @@ export class LoginComponent {
     password: passwordField()
   })
 
-  submit() {
-    const value = this.form.value;
-
-    // TODO: api call with ngrx
-    console.log(value);
-  }
+  submit() { }
 }
